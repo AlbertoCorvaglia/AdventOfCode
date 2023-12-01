@@ -13,13 +13,6 @@ wordToDigit = {
     "eight": "8",
     "nine": "9"
 }
-
-#iterate over every line of file
-#convert word in digit
-    #search for word in string
-    #
-#sum first and last digit
-
 def findIndexes(line, value):
     indexes = []
     
@@ -30,8 +23,6 @@ def findIndexes(line, value):
         else:
             return indexes
     
-    
-
 def toDigit(line):
     orderedNum={}
     for key in wordToDigit.keys():
