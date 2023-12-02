@@ -1,7 +1,6 @@
 inputFile = open("input.txt","r")
 power = 0
 for games in inputFile:
-    print(games)
     cubeSets = games[8:].strip().replace(":","").replace(";",",").split(", ")
     reds=[]
     blues=[]

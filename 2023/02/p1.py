@@ -4,10 +4,10 @@ cubes = {
     "blue":14
 }
 inputFile = open("input.txt","r")
+
 sum = 0
 gameId = 1
 for games in inputFile:
-    print(gameId)
     cubeSets = games[8:].strip().replace(":","").split("; ")
     isValid = True
     for cubeSet in cubeSets:
@@ -17,7 +17,6 @@ for games in inputFile:
             if nCubes > cubes[cube]:
                 isValid = False
                 break
-    print(isValid)
         
     if isValid:
         sum+=gameId
